@@ -1,10 +1,191 @@
-<h2>First Component</h2>
+<div class="min-vh-100 bodybg">
+  <nav class="navbar fixed-top whitebg">
+    <div class="container-fluid">
+      <a data-bs-toggle="offcanvas" data-bs-target="#sidemenu" role="button" aria-controls="sidemenu">
+        <i class="bi bi-list" style="font-size: 2rem; color: #353c4e; margin: 0.5em;"></i>
+      </a>
+      <a class="navbar-brand" href="#">
+        <img src="../../assets/img/logo.png" alt="Bootstrap" height="80">
+      </a>
+    </div>
 
-<nav>
-  <ul>
-    <li><a routerLink="child-a">Child A</a></li>
-    <li><a routerLink="child-b">Child B</a></li>
-  </ul>
-</nav>
+    <div class="offcanvas offcanvas-start" data-bs-backdrop="false" tabindex="-1" id="sidemenu" aria-labelledby="sidemenu">
+      <div class="offcanvas-header">
+        <h5 class="offcanvas-title"> </h5>
+        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+      </div>
 
-<router-outlet></router-outlet>
+      <div class="offcanvas-body">
+        <nav class="nav flex-column">
+          <a class="nav-link pic-link" routerLink="child-a">
+            <i class="bi bi-house-door" style="margin-right: 15px"></i>
+            Dashboard
+          </a>
+  
+          <div class="accordion accordion-flush" id="sideMenuAccordion">
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="flush-headingOne">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                  <i class="bi bi-briefcase" style="margin-right: 15px"></i>
+                  Cartera
+                </button>
+              </h2>
+              <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#sideMenuAccordion">
+                <div class="accordion-body">
+                  <div class="accordion accordion-flush" id="sideMenuAccordionTwo">
+                    <div class="accordion-item">
+                      <h3 class="accordion-header" id="flush-headingTwo">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                          <i class="bi bi-chevron-right"></i>
+                          Castigada
+                        </button>
+                      </h3>
+                      <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#sideMenuAccordionTwo">
+                        <div class="accordion-body">
+                          <div class="nav">
+                            <a class="nav-link sidemenu-item pic-link" routerLink="child-a">
+                              <i class="bi bi-chevron-right"></i>
+                              Aplicación de pagos
+                            </a>
+    
+                            <a class="nav-link sidemenu-item pic-link" routerLink="child-a">
+                              <i class="bi bi-chevron-right"></i>
+                              Cancelaciones especiales
+                            </a>
+    
+                            <a class="nav-link sidemenu-item pic-link" routerLink="child-a">
+                              <i class="bi bi-chevron-right"></i>
+                              Condiciones de desembolso
+                            </a>
+    
+                            <a class="nav-link sidemenu-item pic-link" routerLink="child-a">
+                              <i class="bi bi-chevron-right"></i>
+                              Demográficos
+                            </a>
+    
+                            <a class="nav-link sidemenu-item pic-link" routerLink="child-a">
+                              <i class="bi bi-chevron-right"></i>
+                              Información financiera
+                            </a>
+    
+                            <a class="nav-link sidemenu-item pic-link" routerLink="child-b">
+                              <i class="bi bi-chevron-right"></i>
+                              Liquidación de créditos
+                            </a>
+    
+                            <a class="nav-link sidemenu-item pic-link" routerLink="child-a">
+                              <i class="bi bi-chevron-right"></i>
+                              Seguros
+                            </a>
+    
+                            <a class="nav-link sidemenu-item pic-link" routerLink="child-a">
+                              <i class="bi bi-chevron-right"></i>
+                              Solidarios
+                            </a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+  
+                    <div class="accordion-item">
+                      <h3 class="accordion-header" id="flush-headingThree">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                          <i class="bi bi-chevron-right"></i>
+                          Vigente
+                        </button>
+                      </h3>
+                      <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#sideMenuAccordionTwo">
+                        <div class="accordion-body">
+                          <div class="nav">
+                            <a class="nav-link sidemenu-item pic-link">
+                              <i class="bi bi-chevron-right"></i>
+                              Aplicación de pagos
+                            </a>
+    
+                            <a class="nav-link sidemenu-item pic-link" routerLink="child-a">
+                              <i class="bi bi-chevron-right"></i>
+                              Cancelaciones especiales
+                            </a>
+    
+                            <a class="nav-link sidemenu-item pic-link" routerLink="child-a">
+                              <i class="bi bi-chevron-right"></i>
+                              Condiciones de desembolso
+                            </a>
+    
+                            <a class="nav-link sidemenu-item pic-link" routerLink="child-a">
+                              <i class="bi bi-chevron-right"></i>
+                              Demográficos
+                            </a>
+    
+                            <a class="nav-link sidemenu-item pic-link" routerLink="child-a">
+                              <i class="bi bi-chevron-right"></i>
+                              Información financiera
+                            </a>
+    
+                            <a class="nav-link sidemenu-item pic-link" routerLink="child-b">
+                              <i class="bi bi-chevron-right"></i>
+                              Liquidación de créditos
+                            </a>
+    
+                            <a class="nav-link sidemenu-item pic-link" routerLink="child-a">
+                              <i class="bi bi-chevron-right"></i>
+                              Seguros
+                            </a>
+    
+                            <a class="nav-link sidemenu-item pic-link" routerLink="child-a">
+                              <i class="bi bi-chevron-right"></i>
+                              Solidarios
+                            </a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+  
+          <a class="nav-link pic-link" routerLink="child-a">
+            <i class="bi bi-pie-chart" style="margin-right: 15px"></i>
+            Colocación
+          </a>
+  
+          <a class="nav-link pic-link" routerLink="child-a">
+            <i class="bi bi-book" style="margin-right: 15px"></i>
+            Documentos
+          </a>
+  
+          <a class="nav-link pic-link" routerLink="child-a">
+            <i class="bi bi-arrow-down-up" style="margin-right: 15px"></i>
+            Migración
+          </a>
+  
+          <a class="nav-link pic-link" routerLink="child-a">
+            <i class="bi bi-hand-thumbs-up" style="margin-right: 15px"></i>
+            Negociaciones
+          </a>
+  
+          <a class="nav-link pic-link" routerLink="child-a">
+            <i class="bi bi-wallet" style="margin-right: 15px"></i>
+            Pagos
+          </a>
+  
+          <a class="nav-link pic-link" routerLink="child-a">
+            <i class="bi bi-graph-up-arrow" style="margin-right: 15px"></i>
+            Reportes
+          </a>
+  
+          <a class="nav-link pic-link" routerLink="child-a">
+            <i class="bi bi-headphones" style="margin-right: 15px"></i>
+            Servicio al cliente
+          </a>
+        </nav>
+      </div>
+    </div>
+  </nav>
+
+  <div class="content">
+    <router-outlet></router-outlet>
+  </div>
+</div>

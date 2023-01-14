@@ -26,6 +26,7 @@ const resolvedChildBTitle: ResolveFn<string> = () => Promise.resolve('child b');
 
 const routes: Routes = [
   { path: 'login-component', component: LoginComponent },
+  { path: 'first-component', redirectTo: 'first-component/child-a', pathMatch: 'full' },
   { path: 'first-component', component: FirstComponent,
   children: [
     {

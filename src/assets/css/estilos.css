@@ -1,33 +1,179 @@
+.loginbg {
+  background-color: #2A9F8A!important;
+  color: #353c4e!important;
+  font-family: "Open Sans", sans-serif!important;
+}
+
 .bodybg {
-    background-color: #2A9F8A!important;
-    color: #353c4e!important;
-    font-family: "Open Sans", sans-serif!important;
-  }
-  
-  .btn-login {
-    font-size: 0.9rem;
-    letter-spacing: 0.05rem;
-    padding: 0.75rem 1rem;
-    --bs-btn-color: #fff;
-    --bs-btn-bg: #2A9F8A!important;
-    --bs-btn-border-color:#2A9F8A!important;
-    --bs-btn-hover-color: #fff;
-    --bs-btn-hover-bg: #1c6b5c!important;
-    --bs-btn-hover-border-color: #1c6b5c!important;
-    --bs-btn-focus-shadow-rgb: 49,132,253;
-    --bs-btn-active-color: #fff;
-    --bs-btn-active-bg: #2A9F8A!important;
-    --bs-btn-active-border-color: #2A9F8A!important;
-    --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
-    --bs-btn-disabled-color: rgb(120, 120, 120)!important;
-    --bs-btn-disabled-bg: #9c9c9c!important;
-    --bs-btn-disabled-border-color: #9c9c9c!important;
+  background-color: #f3f3f3 !important;
+  color: #353c4e!important;
+  font-family: "Open Sans", sans-serif!important;
+}
 
-  }
+.whitebg {
+  background-color: #ffffff !important;
+  color: #353c4e!important;
+  font-family: "Open Sans", sans-serif!important;
+}
 
-  main > .container {
-    padding: 60px 15px 0;
-  }
-  
-  
+.btn-login {
+  font-size: 0.9rem;
+  letter-spacing: 0.05rem;
+  padding: 0.75rem 1rem;
+  --bs-btn-color: #fff;
+  --bs-btn-bg: #2A9F8A!important;
+  --bs-btn-border-color:#2A9F8A!important;
+  --bs-btn-hover-color: #fff;
+  --bs-btn-hover-bg: #1c6b5c!important;
+  --bs-btn-hover-border-color: #1c6b5c!important;
+  --bs-btn-focus-shadow-rgb: 49,132,253;
+  --bs-btn-active-color: #fff;
+  --bs-btn-active-bg: #2A9F8A!important;
+  --bs-btn-active-border-color: #2A9F8A!important;
+  --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+  --bs-btn-disabled-color: rgb(120, 120, 120)!important;
+  --bs-btn-disabled-bg: #9c9c9c!important;
+  --bs-btn-disabled-border-color: #9c9c9c!important;
 
+}
+
+main > .container {
+  padding: 60px 15px 0;
+}
+
+.pic-link {
+  color: #353c4e!important;
+}
+
+.content {
+  margin-top: 105px;
+  padding: 1em;
+}
+
+.pic-dashboard-card {
+  width: 50%;
+}
+
+.pic-card-inner {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: center;
+  text-align: right;
+}
+
+.card-title {
+  color: #2A9F8A;
+  font-weight: bold;
+  font-size: 0.8rem;
+}
+
+.card-text {
+  font-size: 1.5rem;
+}
+
+.card-body {
+  position: relative;
+}
+
+.card-icon {
+  aspect-ratio: 1 / 1;
+  background-color: #2A9F8A;
+  border-radius: 10px;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+  position: absolute;
+  top: -1em;
+  left: 1em;
+  width: 50px;
+}
+
+.card-go {
+  color: #9c9c9c;
+}
+
+.card-subtitle {
+  margin-bottom: 1rem;
+  font-size: 0.9em;
+  font-weight: bold;
+}
+
+.list-group {
+  border-radius: 0;
+}
+
+.list-group-item {
+  border-left: none;
+  border-right: none;
+  border-radius: 0;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  font-size: 0.8rem;
+  font-weight: 200;
+  padding: 1.5em 0;
+}
+
+.list-group-icon {
+  aspect-ratio: 1 / 1;
+  background-color: #2A9F8A;
+  border-radius: 50px;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1rem;
+  font-weight: 500;
+  margin: 0 1em 0 0.5em;
+  width: 30px;
+}
+
+.list-group-horizontal > .list-group-item {
+  border-bottom-left-radius: 0 !important;
+  border-top-right-radius: 0 !important;
+}
+
+.card-header {
+  background-color: white;
+  color: #2A9F8A;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.card-two-cols {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.card-two-cols-col {
+  flex: 0.5;
+}
+
+.card-text-title {
+  font-size: 0.8rem;
+  margin-right: 1em;
+}
+
+.card-text-text {
+  font-size: 0.8rem;
+  font-weight: bold;
+  margin-right: 1em;
+}
+
+.card-text-sm {
+  line-height: 1;
+  margin: 0;
+}
+
+.card-full {
+  padding:  1em;
+}
+
+.search-input {
+  background-color: #f3f3f3;
+  border-radius: 50px;
+}
