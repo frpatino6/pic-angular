@@ -1,0 +1,9 @@
+.content {
+    background: #F6F7FB;
+    padding: 2em;
+}
+
+.navbar {
+    width: 100%;
+    box-shadow: 0 0 11px rgb(0 0 0 / 13%);
+}

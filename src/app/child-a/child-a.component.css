@@ -1,0 +1,49 @@
+.pic-card-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.pic-dashboard-card {
+    margin: 1em 0.5em;
+}
+
+.pic-modules-card {
+    margin: 1em 0.5em;
+}
+
+.card-subtitle {
+    margin: 0;
+    padding: 25px 20px;
+    font-size: 1em;
+}
+
+.pic-modules-list {
+    padding: 0 1.25em 1.25em 1.25em;
+}
+
+.pic-modules-item {
+    cursor: pointer;
+    font-size: 1em;
+}
+
+.pic-modules-item:hover {
+    background-color: rgb(240, 240, 240);
+}
+
+.list-group-icon.green {
+    background-color: #2A9F8A;
+}
+
+.list-group-icon.pink {
+    background-color: #FC6180;
+}
+
+.list-group-icon.yellow {
+    background-color: #FFB64D;
+}
+
+.list-group-icon.lime {
+    background-color: #93BE52;
+}

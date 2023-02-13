@@ -25,23 +25,23 @@ const resolvedChildATitle: ResolveFn<string> = () => Promise.resolve('child a');
 const resolvedChildBTitle: ResolveFn<string> = () => Promise.resolve('child b');
 
 const routes: Routes = [
-  { path: 'login-component', component: LoginComponent },
-  { path: 'first-component', redirectTo: 'first-component/child-a', pathMatch: 'full' },
-  { path: 'first-component', component: FirstComponent,
+  { path: 'login', component: LoginComponent },
+  { path: 'pic', redirectTo: 'pic/dashboard', pathMatch: 'full' },
+  { path: 'pic', component: FirstComponent,
   children: [
     {
-      path: 'child-a', // child route path
+      path: 'dashboard', // child route path
       title: resolvedChildATitle,
       component: ChildAComponent, // child route component that the router renders
     },
     {
-      path: 'child-b',
+      path: 'liquidacion-de-creditos',
       title: resolvedChildBTitle,
       component: ChildBComponent, // another child route component that the router renders
     },
   ], },
   { path: 'second-component', component: SecondComponent },
-  { path: '',   redirectTo: '/login-component', pathMatch: 'full' }, // redirect to `first-component`
+  { path: '',   redirectTo: '/login', pathMatch: 'full' }, // redirect to `first-component`
   { path: '**', component: PageNotFoundComponent },  // Wildcard route for a 404 page
 ];
 
