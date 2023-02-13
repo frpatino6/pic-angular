@@ -3,9 +3,9 @@
 
     <form>
         <div class="mb-3">
-          <label for="searchInput" class="form-label">Buscar por número de credito</label>
-          <input type="search" class="form-control search-input" id="searchInput">
-          <i class="bi bi-search search-icon"></i>
+            <label for="searchInput" class="form-label">Buscar por número de credito</label>
+            <input class="form-control search-input" id="searchInput" [(ngModel)]="searchTerm" name="searchTerm" (keydown.enter)="buscarCreditos(searchTerm)">
+            <i class="bi bi-search search-icon" (click)="buscarCreditos(searchTerm)"></i>
         </div>
     </form>
 
@@ -17,34 +17,34 @@
                 <div class="card-two-cols-col">
                     <p class="card-text card-text-sm">
                         <span class="card-text-title">Nombre</span> 
-                        <span class="card-text-text">Palomino Snateliz Nancy</span>
+                        <span class="card-text-text">{{ credito.persona ? credito.persona.nombre : '' }}</span>
                     </p>
         
                     <p class="card-text card-text-sm">
                         <span class="card-text-title">Periocidad</span> 
-                        <span class="card-text-text">Mensual</span>
+                        <span class="card-text-text">{{ credito.periodicidad ? credito.periodicidad : '' }}</span>
                     </p>
         
                     <p class="card-text card-text-sm">
                         <span class="card-text-title">Deuda a la fecha</span> 
-                        <span class="card-text-text">$45'987.765,00</span>
+                        <span class="card-text-text">{{ credito.deuda ? credito.deuda : '' }}</span>
                     </p>
                 </div>
 
                 <div class="card-two-cols-col">
                     <p class="card-text card-text-sm">
                         <span class="card-text-title">Identificación</span> 
-                        <span class="card-text-text">7.680.826.374</span>
+                        <span class="card-text-text">{{ credito.persona ? credito.persona.identificacion : '' }}</span>
                     </p>
         
                     <p class="card-text card-text-sm">
                         <span class="card-text-title">Fecha saldo</span> 
-                        <span class="card-text-text">Diciembre 4 2022</span>
+                        <span class="card-text-text">{{ credito.fechaSaldo | date }}</span>
                     </p>
         
                     <p class="card-text card-text-sm">
                         <span class="card-text-title">Intereses corrientes seg sin amortización</span> 
-                        <span class="card-text-text">0.5</span>
+                        <span class="card-text-text">{{ credito.interesSinAmortizacionCorriente ? credito.interesSinAmortizacionCorriente : '' }}</span>
                     </p>
                 </div>
             </div>
@@ -56,11 +56,11 @@
         <div class="card-body">
             <ul class="list-group list-group-horizontal">
                 <li class="list-group-item flex-fill" style="font-weight: bold;">Cuota</li>
-                <li class="list-group-item flex-fill">3</li>
-                <li class="list-group-item flex-fill">0</li>
-                <li class="list-group-item flex-fill">0</li>
-                <li class="list-group-item flex-fill">0</li>
-                <li class="list-group-item flex-fill">4</li>
+                <li class="list-group-item flex-fill">-</li>
+                <li class="list-group-item flex-fill">-</li>
+                <li class="list-group-item flex-fill">-</li>
+                <li class="list-group-item flex-fill">-</li>
+                <li class="list-group-item flex-fill">-</li>
             </ul>
 
             <ul class="list-group list-group-horizontal">
