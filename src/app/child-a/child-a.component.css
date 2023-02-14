@@ -1,10 +1,3 @@
-.pic-card-container {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    flex-wrap: wrap;
-}
-
 .pic-dashboard-card {
     margin: 1em 0.5em;
 }

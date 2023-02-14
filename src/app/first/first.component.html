@@ -1,20 +1,17 @@
 <div class="min-vh-100 bodybg">
   <nav class="navbar fixed-top whitebg">
     <div class="container-fluid">
-      <a data-bs-toggle="offcanvas" data-bs-target="#sidemenu" role="button" aria-controls="sidemenu">
+      <a role="button" (click)="sideMenu = !sideMenu">
         <i class="bi bi-list" style="font-size: 2rem; color: #353c4e; margin: 0.5em;"></i>
       </a>
       <a class="navbar-brand" href="#">
         <img src="../../assets/img/logo.png" alt="Bootstrap" height="80">
       </a>
     </div>
+  </nav>
 
-    <div class="offcanvas offcanvas-start" data-bs-backdrop="false" tabindex="-1" id="sidemenu" aria-labelledby="sidemenu">
-      <div class="offcanvas-header">
-        <h5 class="offcanvas-title"> </h5>
-        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-      </div>
-
+  <div class="wrapper">
+    <div class="sidebar" *ngIf="sideMenu">
       <div class="offcanvas-body">
         <nav class="nav flex-column">
           <a class="nav-link pic-link" routerLink="dashboard">
@@ -34,51 +31,51 @@
                 <div class="accordion-body">
                   <div class="accordion accordion-flush" id="sideMenuAccordionTwo">
                     <div class="accordion-item">
-                      <h3 class="accordion-header" id="flush-headingTwo">
-                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                      <span class="accordion-header" id="flush-headingTwo">
+                        <a class="nav-link pic-link accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
                           <i class="bi bi-chevron-right"></i>
                           Castigada
-                        </button>
-                      </h3>
+                        </a>
+                      </span>
                       <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#sideMenuAccordionTwo">
                         <div class="accordion-body">
                           <div class="nav">
-                            <a class="nav-link sidemenu-item pic-link" routerLink="dashboard">
+                            <a class="nav-link pic-link sidemenu-item pic-link" routerLink="dashboard">
                               <i class="bi bi-chevron-right"></i>
                               Aplicación de pagos
                             </a>
     
-                            <a class="nav-link sidemenu-item pic-link" routerLink="dashboard">
+                            <a class="nav-link pic-link sidemenu-item pic-link" routerLink="dashboard">
                               <i class="bi bi-chevron-right"></i>
                               Cancelaciones especiales
                             </a>
     
-                            <a class="nav-link sidemenu-item pic-link" routerLink="dashboard">
+                            <a class="nav-link pic-link sidemenu-item pic-link" routerLink="dashboard">
                               <i class="bi bi-chevron-right"></i>
                               Condiciones de desembolso
                             </a>
     
-                            <a class="nav-link sidemenu-item pic-link" routerLink="dashboard">
+                            <a class="nav-link pic-link sidemenu-item pic-link" routerLink="dashboard">
                               <i class="bi bi-chevron-right"></i>
                               Demográficos
                             </a>
     
-                            <a class="nav-link sidemenu-item pic-link" routerLink="dashboard">
+                            <a class="nav-link pic-link sidemenu-item pic-link" routerLink="dashboard">
                               <i class="bi bi-chevron-right"></i>
                               Información financiera
                             </a>
     
-                            <a class="nav-link sidemenu-item pic-link" routerLink="liquidacion-de-creditos">
+                            <a class="nav-link pic-link sidemenu-item pic-link" routerLink="liquidacion-de-creditos">
                               <i class="bi bi-chevron-right"></i>
                               Liquidación de créditos
                             </a>
     
-                            <a class="nav-link sidemenu-item pic-link" routerLink="dashboard">
+                            <a class="nav-link pic-link sidemenu-item pic-link" routerLink="dashboard">
                               <i class="bi bi-chevron-right"></i>
                               Seguros
                             </a>
     
-                            <a class="nav-link sidemenu-item pic-link" routerLink="dashboard">
+                            <a class="nav-link pic-link sidemenu-item pic-link" routerLink="dashboard">
                               <i class="bi bi-chevron-right"></i>
                               Solidarios
                             </a>
@@ -88,51 +85,51 @@
                     </div>
   
                     <div class="accordion-item">
-                      <h3 class="accordion-header" id="flush-headingThree">
-                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                      <span class="accordion-header" id="flush-headingThree">
+                        <a class="nav-link pic-link accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
                           <i class="bi bi-chevron-right"></i>
                           Vigente
-                        </button>
-                      </h3>
+                        </a>
+                      </span>
                       <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#sideMenuAccordionTwo">
                         <div class="accordion-body">
                           <div class="nav">
-                            <a class="nav-link sidemenu-item pic-link">
+                            <a class="nav-link pic-link sidemenu-item pic-link">
                               <i class="bi bi-chevron-right"></i>
                               Aplicación de pagos
                             </a>
     
-                            <a class="nav-link sidemenu-item pic-link" routerLink="dashboard">
+                            <a class="nav-link pic-link sidemenu-item pic-link" routerLink="dashboard">
                               <i class="bi bi-chevron-right"></i>
                               Cancelaciones especiales
                             </a>
     
-                            <a class="nav-link sidemenu-item pic-link" routerLink="dashboard">
+                            <a class="nav-link pic-link sidemenu-item pic-link" routerLink="dashboard">
                               <i class="bi bi-chevron-right"></i>
                               Condiciones de desembolso
                             </a>
     
-                            <a class="nav-link sidemenu-item pic-link" routerLink="dashboard">
+                            <a class="nav-link pic-link sidemenu-item pic-link" routerLink="dashboard">
                               <i class="bi bi-chevron-right"></i>
                               Demográficos
                             </a>
     
-                            <a class="nav-link sidemenu-item pic-link" routerLink="dashboard">
+                            <a class="nav-link pic-link sidemenu-item pic-link" routerLink="dashboard">
                               <i class="bi bi-chevron-right"></i>
                               Información financiera
                             </a>
     
-                            <a class="nav-link sidemenu-item pic-link" routerLink="liquidacion-de-creditos">
+                            <a class="nav-link pic-link sidemenu-item pic-link" routerLink="liquidacion-de-creditos">
                               <i class="bi bi-chevron-right"></i>
                               Liquidación de créditos
                             </a>
     
-                            <a class="nav-link sidemenu-item pic-link" routerLink="dashboard">
+                            <a class="nav-link pic-link sidemenu-item pic-link" routerLink="dashboard">
                               <i class="bi bi-chevron-right"></i>
                               Seguros
                             </a>
     
-                            <a class="nav-link sidemenu-item pic-link" routerLink="dashboard">
+                            <a class="nav-link pic-link sidemenu-item pic-link" routerLink="dashboard">
                               <i class="bi bi-chevron-right"></i>
                               Solidarios
                             </a>
@@ -183,9 +180,9 @@
         </nav>
       </div>
     </div>
-  </nav>
 
-  <div class="content">
-    <router-outlet></router-outlet>
+    <div class="content">
+      <router-outlet></router-outlet>
+    </div>
   </div>
 </div>

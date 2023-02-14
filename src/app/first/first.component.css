@@ -1,9 +1,30 @@
+.wrapper {
+    display: flex;
+}
+
 .content {
     background: #F6F7FB;
     padding: 2em;
+    width: 100%;
 }
 
 .navbar {
     width: 100%;
     box-shadow: 0 0 11px rgb(0 0 0 / 13%);
+}
+
+.sidebar {
+    background-color: white;
+    box-shadow: 0 0 11px rgb(0 0 0 / 13%);
+    padding-top: 1.5rem;
+    position: sticky;
+    left: 0;
+    top: 105px;
+    height: calc(100vh - 105px);
+    width: 25vw;
+}
+
+.nav-link {
+    font-size: 14px;
+    padding: 10px 20px;
 }

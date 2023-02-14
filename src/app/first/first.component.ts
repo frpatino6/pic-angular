@@ -18,4 +18,6 @@ export class FirstComponent {
       console.log("component has been initialized!")
     });
   }
+
+  sideMenu: boolean = true
 }

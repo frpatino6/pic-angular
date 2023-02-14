@@ -4316,7 +4316,7 @@ table tbody .border-bottom-info td {
   visibility: visible; }
 .pcoded[theme-layout="vertical"][vertical-nav-type="compact"][pcoded-device-type="desktop"] .pcoded-header .navbar-logo img {
   padding: 84px;
-  background: url(../images/logo-compact.png) left top no-repeat;
+  /* background: url(../images/logo-compact.png) left top no-repeat; */
   margin-top: 112px; }
 .pcoded[theme-layout="vertical"][vertical-nav-type="compact"] .pcoded-header .navbar-logo {
   width: 200px;
@@ -5633,7 +5633,7 @@ table tbody .border-bottom-info td {
     padding-left: 10px;
     transform: rotate(180deg); }
 
-body[themebg-pattern="pattern1"] {
+/* body[themebg-pattern="pattern1"] {
   background-image: url("../images/pattern1.jpg"); }
 body[themebg-pattern="pattern2"] {
   background-image: url("../images/pattern2.jpg"); }
@@ -5650,7 +5650,7 @@ body[themebg-pattern="pattern7"] {
 body[themebg-pattern="pattern8"] {
   background-image: url("../images/pattern8.jpg"); }
 body[themebg-pattern="pattern9"] {
-  background-image: url("../images/pattern9.jpg"); }
+  background-image: url("../images/pattern9.jpg"); } */
 
 .pcoded .pcoded-navbar[active-item-theme="theme1"] .pcoded-item li .pcoded-submenu li.active > a,
 .pcoded .pcoded-navbar[active-item-theme="theme1"] .pcoded-item li .pcoded-submenu li:hover > a {
@@ -6358,7 +6358,7 @@ body[themebg-pattern="pattern9"] {
       background: #384b5f; }
     .theme-color a[sub-item-theme="theme9"] {
       background: #578ebe; }
-    .theme-color a[themebg-pattern="pattern1"] {
+    /* .theme-color a[themebg-pattern="pattern1"] {
       background-image: url("../images/pattern1.jpg"); }
     .theme-color a[themebg-pattern="pattern2"] {
       background-image: url("../images/pattern2.jpg"); }
@@ -6375,7 +6375,7 @@ body[themebg-pattern="pattern9"] {
     .theme-color a[themebg-pattern="pattern8"] {
       background-image: url("../images/pattern8.jpg"); }
     .theme-color a[themebg-pattern="pattern9"] {
-      background-image: url("../images/pattern9.jpg"); }
+      background-image: url("../images/pattern9.jpg"); } */
 
 .sparkline-chart {
   text-align: center; }
@@ -8464,11 +8464,12 @@ td.highlight {
   text-align: center; }
 
 td.details-control {
-  background: url("../images/details_open.png") no-repeat center center;
+  /* background: url("../images/details_open.png") no-repeat center center; */
   cursor: pointer; }
 
 tr.shown td.details-control {
-  background: url("../images/details_close.png") no-repeat center center; }
+  /* background: url("../images/details_close.png") no-repeat center center;  */
+}
 
 #row-select .selected,
 #row-delete .selected {
@@ -10866,7 +10867,7 @@ table.footable-paging-center > tfoot > tr.footable-paging > td {
  ========================================= */
 .common-img-bg {
   background-size: cover;
-  background: url(../images/bg.jpg) no-repeat center center fixed;
+  /* background: url(../images/bg.jpg) no-repeat center center fixed; */
   height: 100%; }
 
 .signin-card .auth-box button i, .signup-card .auth-box button i, .login-card .auth-box button i {
@@ -13444,7 +13445,7 @@ table.footable-paging-center > tfoot > tr.footable-paging > td {
     border-top: 9px solid #FC6180;
     transition: all ease-in 0.3s; }
     #task-container li.complete:before {
-      background: url("../images/complete.png") no-repeat;
+      /* background: url("../images/complete.png") no-repeat; */
       position: absolute;
       top: 5px;
       right: 5px;
